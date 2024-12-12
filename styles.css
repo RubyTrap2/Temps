@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+div, img{
+    user-select: none; 
+}
+
+button{
+    cursor: pointer;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: silkscreen;
+    height: 100%;
+}
+
+p, input, label, button {
+    font-family: silkscreen;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #530000;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid white;
+    z-index: 2;
+}
+
+.centerdiv {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+}
+
+.leftDiv {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+}
+
+#titlediv {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    margin-left: 50px;
+}
+
+.titleLogo {
+    user-select: none; 
+    height: 80%
+}
+
+.titleText {
+    user-select: none; 
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+#hamburger {
+    cursor: pointer;
+    user-select: none; 
+    height: 65%;
+    margin-left: 10px;
+}
+
+.newBookButton {
+    width: fit-content;
+    white-space: nowrap;
+    margin-right: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 60px;
+}
+
+.newBookPlus {
+    user-select: none; 
+    float:left;
+    margin-right:1.2em;
+    height: 20px;
+}
+
+
+.mainEmpty {
+    background-color: #2E0505;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.newBookText {
+    user-select: none; 
+}
+
+.newBookTextEmpty {
+    user-select: none; 
+    font-size: 20px;
+}
+
+.newBookButtonEmpty {
+    width: fit-content;
+    white-space: nowrap;
+    margin-right: 30px;
+    border: 2px solid white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 90px;
+    margin-bottom: 50px;
+}
+
+.newBookPlusEmpty {
+    float:left;
+    margin-right:1.2em;
+    height: 30px;
+}
+
+.quote {
+    user-select: none;
+    text-align: center;
+    font-size: 40px;
+    width: 75%;
+}
+
+#contentDiv {
+    background-color: #2E0505;
+    width: 100%;
+    height: 100%;
+}
+
+#mainFull {
+    background-color: #2E0505;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2E0505;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 20px;
+    width: 290px;
+}
+
+.chapter {
+    font-size: 15px;
+}
+
+.image {
+    border-radius: 15px;
+    width: 330px;
+}
+
+input, button {
+    background-color: #6C0505;
+}
+
+
+
+.popupTitle {
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.label1 {
+    font-size: 25px;
+    text-align: initial;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.inputDiv {
+    text-align: center;
+}
+
+.textbox {
+    width: 80%;
+    height: 45px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#cancelButton, #saveButton {
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+}
+
+.buttonDiv {
+    position: absolute;
+    right: 10%;
+    width: fit-content;
+    height: fit-content;
+    bottom: 3%;
+}
+
+#imageButton, #mangaButton {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.mangaDiv, .imageDiv {
+    position: absolute;
+    bottom: 3%;
+    left: 13%;
+    text-align: center;
+}
+
+.mangaDiv {
+    left: 28%;
+}
+
+#newBookPopup.show {
+    visibility: visible !important;
+    position: absolute;
+    background-color: #460000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+}
+
+#newBookPopup {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+
+#smokeBombD  {
+    visibility: hidden;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

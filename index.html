@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Rubrary</title>
+</head>
+<body>
+    <div class="header">
+        <div class="leftDiv">
+        <div class="centerdiv">
+            <img id="hamburger" src="assets/Hamburger Menu.png">
+        </div>
+        <div id="titlediv">
+            <img class="titleLogo" src="assets/Rubrary.png">
+            <p class="titleText">Rubrary</p>
+        </div>
+        </div>
+        <div class="centerdiv">
+            <button class="newBookButton" id="newBookButton" style="display:inline-block">
+                <img class="newBookPlus" src="assets/Plus.png">
+                <p class="newBookText">New Book</p>
+            </button>
+        </div>
+    </div>  
+    
+    <div id="contentDiv">
+        <div id="newBookPopup" class="show">
+            <div id="smokeBomb"></div>
+            <p class="popupTitle">new book</p>
+            <div class="inputDiv">
+                <p class="label1">name</p>
+                <input class="textbox" type="text">
+                <p class="label1">link</p>
+                <input class="textbox" type="text">
+            </div>
+            <div class="imageDiv">
+                <p class="label2">image</p>
+                <button id="imageButton"></button>
+            </div>
+            <div class="mangaDiv">
+                <p class="label2">manga</p>
+                <button id="mangaButton"></button>
+            </div>
+            <div class="buttonDiv">
+                <button id="cancelButton">cancel</button>
+                <button id="saveButton">save</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
