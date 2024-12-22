@@ -27,29 +27,34 @@
             </button>
         </div>
     </div>  
-    
+
     <div id="contentDiv">
-        <div id="newBookPopup" class="show">
-            <div id="smokeBomb"></div>
-            <p class="popupTitle">new book</p>
-            <div class="inputDiv">
-                <p class="label1">name</p>
-                <input class="textbox" type="text">
-                <p class="label1">link</p>
-                <input class="textbox" type="text">
-            </div>
-            <div class="imageDiv">
-                <p class="label2">image</p>
-                <button id="imageButton"></button>
-            </div>
-            <div class="mangaDiv">
-                <p class="label2">manga</p>
-                <button id="mangaButton"></button>
-            </div>
-            <div class="buttonDiv">
-                <button id="cancelButton">cancel</button>
-                <button id="saveButton">save</button>
-            </div>
+    </div>
+    
+    <div id="smokeBomb"></div>
+    <div id="newBookPopup">
+        <p class="popupTitle">new book</p>
+        <div class="inputDiv">
+            <p class="label1">name</p>
+            <input id="txtboxName" class="textbox" type="text">
+            <p class="label1">link</p>
+            <input id="txtboxLink" class="textbox" type="text">
+        </div>
+        <div class="imageDiv">
+            <p class="label2">image</p>
+            <button id="imageButton">
+                <input type="file" id="imageInput" accept="image/*">
+                    <img src="assets/Plus.png">
+                </input>
+            </button>
+        </div>
+        <div class="mangaDiv">
+            <p class="label2">manga</p>
+            <button id="mangaButton"></button>
+        </div>
+        <div class="buttonDiv">
+            <button id="cancelButton">cancel</button>
+            <button id="saveButton">save</button>
         </div>
     </div>
 </body>
